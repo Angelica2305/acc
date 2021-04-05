@@ -19,9 +19,11 @@ MM_reloadPage(true);
 <body>
 <div id="Layer1" style="position:absolute; left:10px; top:15px; width:2px; height:7px; z-index:1"></div>
 <div id="Layer2" style="position:absolute; left:2px; top:0px; width:653px; height:757px; z-index:2">
-  <p align="center">politicas del centro de computo </p>
+  <p align="center">&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
   <p>1. Los equipos de c&oacute;mputo solo deber&aacute;n contener software con licencia, para el desarrollo de las<br>
-    tareas de los usuarios. </p>
+  tareas de los usuarios. </p>
   <p><br>
     2. El Centro de C&oacute;mputo aplicar&aacute; procedimientos para verificar que los equipos de c&oacute;mputo de la<br>
     Universidad, tengan instalados software con licencia y software libre; las autoridades y Jefes<br>
@@ -61,5 +63,110 @@ MM_reloadPage(true);
     restringidas, por el personal del Centro de C&oacute;mputo.<br>
   </p>
 </div>
+<div id="Layer3" style="position:absolute; left:63px; top:3px; width:504px; height:86px; z-index:3">
+<script>
+
+/*
+Roller Coaster Script-
+By JavaScript Kit
+Over 200+ free scripts here!
+*/
+
+var fs=1
+var direction="right"
+function rollertext(whichone){
+var thetext=whichone
+for (i=0;i<thetext.length;i++){
+document.write(thetext.charAt(i).fontsize(fs))
+
+if (fs<7&&direction=="right")
+fs++
+else if (fs==7){
+direction="left"
+fs--
+}
+else if (fs==1){
+direction="right"
+fs++
+}
+else if (fs>1&&direction=="left")
+fs--
+
+}
+}
+//Change below text to your won
+rollertext("POLITICAS DEL CENTRO DE COMPUTO!")
+</script>
+</div>
+<div id="Layer4" style="position:absolute; left:677px; top:28px; width:124px; height:39px; z-index:4">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var da = (document.all) ? 1 : 0;
+var pr = (window.print) ? 1 : 0;
+var mac = (navigator.userAgent.indexOf("Mac") != -1); 
+
+function printPage2() {
+  if (pr) // NS4, IE5
+    window.print()
+  else if (da && !mac) // IE4 (Windows)
+    vbPrintPage()
+  else // other browsers
+    alert("No soportado por este navegador");
+  return false;
+}
+
+if (da && !pr && !mac) with (document) {
+  writeln('<OBJECT ID="WB" WIDTH="0" HEIGHT="0" CLASSID="clsid:8856F961-340A-11D0-A96B-00C04FD705A2"></OBJECT>');
+  writeln('<' + 'SCRIPT LANGUAGE="VBScript">');
+  writeln('Sub window_onunload');
+  writeln('  On Error Resume Next');
+  writeln('  Set WB = nothing');
+  writeln('End Sub');
+  writeln('Sub vbPrintPage');
+  writeln('  OLECMDID_PRINT = 6');
+  writeln('  OLECMDEXECOPT_DONTPROMPTUSER = 2');
+  writeln('  OLECMDEXECOPT_PROMPTUSER = 1');
+  writeln('  On Error Resume Next');
+  writeln('  WB.ExecWB OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER');
+  writeln('End Sub');
+  writeln('<' + '/SCRIPT>');
+}
+
+// -->
+</SCRIPT>
+
+<center>
+<FORM ACTION="#" METHOD=POST>
+<INPUT TYPE=SUBMIT VALUE=" Imprimir " onClick="return printPage2()">
+</FORM>
+
+<a href="#" onClick="return printPage2()"><b>Imprimir</b></a> <br>
+
+ <a href="#" onClick="return printPage2()"><img SRC="printer.gif" border="0" WIDTH="38" HEIGHT="34"></a> 
+
+
+
+<hr>
+<center>
+<h3>
+ACTUALIZA LA PAGINA Y VERAZ LO QUE PASA
+</h3>
+</center></div>
+<div id="Layer4" style="position:absolute; left:677px; top:42px; width:123px; height:53px; z-index:4">
+
+
+
 </body>
+<script>
+
+/*Random background color- by javascriptkit.com
+Visit JavaScript Kit (http://javascriptkit.com) for script
+Credit must stay intact for use*/
+
+//Enter list of bgcolors:
+var bgcolorlist=new Array("#DFDFFF", "#FFFFBF", "#80FF80", "#EAEAFF", "#C9FFA8", "#F7F7F7", "#FFFFFF", "#DDDD00")
+
+document.body.style.background=bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]
+</script>
 </html>
